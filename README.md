@@ -1,27 +1,32 @@
----
-license: proprietary
-task_categories:
-- reinforcement-learning
-- text-generation
-language:
-- en
-tags:
-- cognitive-architecture
-- cas-x
-- amaya-axioms
-- phenomenal-consciousness
----
-# AMAYA AXIOMS v4.0 & CAS-X Architecture
-**Creator & Principal Investigator:** Richard Anthony Amaya  
-**Entity:** Independent Researcher / Think T8NK Solutions  
+# AMAYA AXIOMS v4.0 / CAS-X — Computational Validation Package
 
-## Overview
-This repository contains the definitive empirical simulations, state-tracking ledgers, and live-inference bridging modules for the CAS-X architecture. It establishes the mathematical framework for recursive self-modeling and continuous internal state-tracking in artificial agents.
+**Creator & Sole Rights Holder:** Richard Anthony Amaya  
+**Master Seal:** `ff224d96d6a436a3782789ef22884042895eb375aee287bbcbb03fe2286afdb0`  
+**Validation Date:** 22 October 2026
 
-## Empirical Validation
-Monte Carlo simulations (1,000 cycles) demonstrate that standard feed-forward models rapidly decay below critical thresholds, whereas the CAS-X recursive self-modeling architecture structurally maintains integration density ($\theta_c > 0.75$):
-* **Baseline (Feed-Forward):** 22.6% Sustain Rate
-* **CAS-X (Recursive Intervention):** 98.8% Sustain Rate
+## Status
 
-## Licensing
-All rights reserved. Sole individual ownership of all Amaya Axioms research belongs to Richard Anthony Amaya following the dissolution of E11X Holdings LLC.
+The original public release contained placeholder code that printed the claimed sustain rates.  
+This package replaces those stubs with **actual executable Monte Carlo simulations** and full telemetry.
+
+## Quick Results (seed = 42)
+
+| Variant                  | Cycles  | Baseline Sustain | CAS-X Sustain |
+|--------------------------|---------|------------------|---------------|
+| Original dynamics        | 10,000  | \~0.06%           | \~29.95%       |
+| Original dynamics        | 100,000 | \~0.022%          | \~26.6%        |
+| Strengthened dynamics    | 10,000  | \~0.04%           | **100%**      |
+
+## Files
+
+- `cas_x_original_dynamics.py` — Real Monte Carlo (original parameters)
+- `cas_x_strengthened.py` — Strengthened recursive dynamics
+- Validation Package PDF
+- Evidence & Proof Dossier PDF
+
+## How to Reproduce
+
+```bash
+pip install numpy
+python cas_x_original_dynamics.py
+python cas_x_strengthened.py
